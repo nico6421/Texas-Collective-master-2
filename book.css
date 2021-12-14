@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: 'Yuji Syuku';
+}
+
+
+body {
+    background-color: whitesmoke;
+    background-size: cover;
+}
+
+.cover {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+
+.text {
+    margin-top: 15px;
+}
+
+.text1 {
+    margin-top: 15px;
+}
+
+.text a{
+    font-family: 'Rye', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.text1 a{
+    font-family: 'Rye', cursive;
+    color: #97b6ab;
+    text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.text a:hover {
+    transition: 0.2s;
+    color: #97b6ab;
+}
+
+.text1 a:hover {
+    transition: 0.2s;
+    color: #97b6ab;
+}
+
+.logo-box {
+    margin-top: 100px;
+}
+
+.logo-box img {
+    width:40%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 100%;
+   
+}
+
+form .inner  {
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content:space-around;
+   
+}
+
+.top input{
+   width: 200px;
+   border: none;
+   height: 30px;
+  background-color: rgba(128, 128, 128, 0.267);
+  border-radius: 5px;
+}
+
+.buttom input {
+    width: 200px;
+    border: none;
+    height: 30px;
+    background-color: rgba(128, 128, 128, 0.267);
+    border-radius: 5px;
+}
+
+.lower {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.center {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+.tekstboks input {
+    display: flex;
+    width: 100%;
+    border: none;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.267);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+
+
+
+.submit {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.966);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+.file {
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer div {
+    margin-top: 10px;
+}
+
+.footer-box {
+    margin-top: 20px;
+    width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  
+}
+
+.footer-box p{
+    margin-top: 15px;
+    font-family: 'rye';
+}
+.some img{
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
