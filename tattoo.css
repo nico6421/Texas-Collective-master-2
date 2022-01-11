@@ -246,4 +246,55 @@ margin-bottom: 10px;
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 700px) {
+    section {
+        width:90%;
+       
+    }
 
+    .gallery {
+       
+      grid-template-columns: 80px 80px 80px 80px;
+
+}
+
+.arts {
+    display: grid;
+    width: 90%;
+
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer div {
+    margin-top: 5px;
+}
+
+.footer-box {
+    margin-top: 50px;
+    width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  font-family: 'rye';
+}
+
+.footer-box p{
+    margin-top: 15px;
+}
+
+.some img{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+
+}

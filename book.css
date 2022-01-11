@@ -204,3 +204,68 @@ form .inner  {
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 700px) {
+
+    .top input{
+        width: 130px;
+        
+     }
+     
+     .buttom input {
+         width: 130px;
+        
+     }
+     
+     form .inner  {
+        width: 100%;
+       
+    }
+
+    
+    .center {
+        max-width: 80%;
+        
+        
+    }
+
+
+    .footer {
+        height: 100px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer div {
+        margin-top: 5px;
+    }
+    
+    .footer-box {
+        margin-top: 50px;
+        width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      color: white;
+      font-family: 'rye';
+    }
+    
+    .footer-box p{
+        margin-top: 15px;
+    }
+    
+    .some img{
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 2px;
+    }
+
+    .lower {
+       
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+
+}

@@ -85,7 +85,7 @@ h1 {
     flex-direction: row;
     margin-top: 100px;
     justify-content: space-evenly;
-    font-family: 'Yuji Syuku';;
+    font-family: 'Yuji Syuku';
     
 }
 
@@ -94,6 +94,8 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+
 
 .form{
     background-color: rgba(128, 128, 128, 0.267);
@@ -177,5 +179,82 @@ iframe {
     height: 40px;
     margin-left: 10px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 700px) { 
+
+    .container {
+       display: none;
+        
+    }
+
+    .container2 {
+        width: 90%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        
+        margin-top: 100px;
+        
+        font-family: 'Yuji Syuku';
+        
+    }
+
+    .alextext { 
+        display: none;
+    }
+
+    .alextext2 {
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+.alex img {
+    width: 100%;
+}
+
+    .footer {
+        height: 100px;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer div {
+        margin-top: 5px;
+    }
+    
+    .footer-box {
+        margin-top: 50px;
+        width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      color: white;
+      font-family: 'rye';
+    }
+    
+    .footer-box p{
+        margin-top: 15px;
+    }
+    
+    .some img{
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 2px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 700px) {
+
+.alextext2 {
+    display: none;
+}
+
 }
 
