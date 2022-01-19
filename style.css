@@ -7,9 +7,12 @@
 
 body {
     background-image: url("images/texas-baggrund.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 
   }
 
@@ -17,6 +20,7 @@ body {
     box-shadow: 0 25px 0 0 rgba(0, 0, 0, 0.712);
     -webkit-box-shadow: 0 10px 6px -6px black;
 	   -moz-box-shadow: 0 10px 6px -6px black;
+     width: 100%;
 	        
 }
       
@@ -40,9 +44,13 @@ border-radius: 4px;
 height: 300px;
 width: 300px;
 text-align: center;
-
-
 }
+
+.tattoo_img, .barber_img, .denim_img  {
+  max-height: 200px;
+  max-width: 200px;
+}
+
 
 .flexbox img {
   margin-top: 50px;
@@ -113,7 +121,6 @@ h2 {
     
 }
 
-
 .article_text {
   display: flex;
   height: 170px;
@@ -150,7 +157,7 @@ border-radius: 4px;
   position: relative;
   width: 100%;
   height: 100%;
-  
+  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   
@@ -179,9 +186,8 @@ border-radius: 4px;
 }
 
 .flip-card-text {
-  margin-top: -290px;
-  margin-left: 100px;
-  font-family: 'Rye'
+  margin-top: -300px;
+  margin-left: -40px;
 }
 
 
@@ -211,6 +217,8 @@ border-radius: 4px;
   margin-right: 25px;
   margin-top: 100px;
   padding: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
 box-shadow: 0 8px 6px -6px black;
 border-radius: 4px;
   
@@ -230,7 +238,7 @@ border-radius: 4px;
   position: relative;
   width: 100%;
   height: 100%;
-  
+  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   
@@ -244,16 +252,12 @@ border-radius: 4px;
   position: absolute;
   width: auto;
   height: auto;
-  
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   
 }
 
-.flip-card-text2 {
-  margin-top: -300px;
-  margin-left: 100px;
-  font-family: 'Rye'
-}
+
 
 .flip-card-back2 {
   background-color: inherit;
@@ -285,6 +289,8 @@ border-radius: 4px;
   background-color: #b7794d;
   margin-bottom: 30px;
   border-radius: 5px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
 box-shadow: 0 8px 6px -6px black;
 }
 
@@ -301,6 +307,8 @@ grid-template-columns: 120px 120px 120px  120px 120px 120px;
 align-items: start;
 justify-content: space-evenly;
 }
+
+
 
 .gallery :first-child {
 align-self: center;
@@ -319,7 +327,7 @@ margin-bottom: 20px;
 display: none;
 position:absolute;
 z-index: 7;
-width: 100vw;
+width: 100%;
 height: 80vh;
 background-size: contain;
 background-repeat: no-repeat no-repeat;
@@ -340,6 +348,7 @@ footer {
   text-align: center;
   font-family: 'Rye', cursive;
   bottom: 0;
+  margin-top: 1%;
   
 
 }
@@ -347,15 +356,16 @@ footer {
 .texas {
   width: 100%;
   display: table;
-  margin-left: 12px;
+  
 }
 
 .footer-box {
-  padding: 10px;
+  width: 100%;
 }
 
 .upper-text {
-  padding: 10px;
+  text-align: center;
+  margin-top: 1%;
 }
 
 
@@ -386,17 +396,376 @@ footer {
 
 
 
+/*_____________________________________________________________________________________________________________________________________*/
+/* hide af indhold fra HTML for ting der kun er egnet mobil /tablets. */
+
+@media only screen and (min-width:1201px) {
+  
+  .polaroid-mobil {
+    display: none;
+  }
+
+  .container-mobil {
+    display: none;
+  }
+
+  .personinfo-mobil {
+    display: none;
+  }
+
+}
 
 
 
 
-/*---Mobile friendly----*/
+/*_____________________________________________________________________________________________________________________________________*/
 
-@media only screen and (max-width: 1055px) {
+/*--tablet friendly----*/
+
+@media only screen and (max-width: 1200px) {
+  
   body {
-    background-image: url("/images/mobile\ background2.png");
-    background-repeat: no-repeat;
+    background-image: url("images/texas-baggrund.png");
+    background-repeat:repeat;
     background-attachment: fixed;
-    background-size: 100%;
+   
+   
+}
+/* tilføjet repeat på baggrund her (ovenover), da den ellers ikke fyldte skærmen */ 
+
+  .cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /* tilpasning af knapper */ 
+  
+  .flexbox {
+ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    max-width: 99%;
+    
+  
+  }
+  
+  .flexbox div {
+      margin-top: 50px;
+  background-color: #b7794d;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 4px;
+  height: 120px;
+  width: 120px;
+  max-width: 100%;
+  text-align: center;
+  }
+
+  .flexbox img {
+    height: 100px;
+    margin-top: 10%;
+    
+/* noget nyt */
+
+
+  }
+
+  .galleri {
+    max-width: 100%;
+    
+  }
+
+  .gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px 150px; 
+    margin: none;
+  
+  }
+
+  .img {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  
+
+  .arts {
+    
+  }
+
+  .article1, .article2, .article3 {
+    display: none;
+  }
+
+  /* footer ind til at display som kollonne */ 
+
+  .lower-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 15px;
+  }
+
+
+  .container {
+    display: none;
+  }
+
+  .texas_text {
+    display: none;
+  }
+
+  .container-mobil {
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    background-color:#b7794d ;
+    margin-top: 50px ;
+    margin-left: auto;
+    margin-right: auto ;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 4px;
+    
+  }
+
+  .overskrift-mobil {
+    font-size: 175%;
+  }
+
+  .texas_text-mobil {
+    text-align: start;
+    font-family: 'Yuji Syuku';
+    font-style: normal;
+    font-weight: 600;
+  }
+
+
+.drengene-polaroid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:55%;
+}
+  
+
+.personinfo-mobil-pynt {
+  width: 80%;
+    padding: 5px;
+    text-align: center;
+    background-color:#b7794d ;
+    margin-top: 10px ;
+    margin-left: auto;
+    margin-right: auto ;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 4px; 
+}
+
+.personinfo-text {
+ 
+  font-family: 'Yuji Syuku';
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 3%;
+  text-align: left;
+}
+
+ 
+.personinfo-header {
+  font-family: 'rye', cursive;
+  margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*_____________________________________________________________________________________________________________________________________*/
+
+/* mindre mobiler */
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+  body {
+    background-image: url("images/texas-baggrund.png");
+    background-repeat:repeat;
+    background-attachment: fixed;
+   
+   
+}
+
+
+  .cover {
+    min-width: 100%;
+    height: 200px;
+    
+  }
+
+  /* tilpasning af knapper */ 
+  
+  .flexbox {
+ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+    
+    
+  
+  }
+  
+  .flexbox div {
+      margin-top: 50px;
+  background-color: #b7794d;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  border-radius: 4px;
+ text-align: center;
+ max-height: 100%;
+  }
+
+  .flexbox img {
+    height: 100px;
+    margin-top: 10%;
+
+
+
+
+    
+/* noget nyt */
+
+
+  }
+
+  
+  .article1, .article2, .article3 {
+    display: none;
+    
+  }
+
+  .gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px;
+  }
+
+  .img {
+    max-width: 60%;
+  }
+
+  .tattoo_img, .barber_img, .denim_img  {
+    max-height: 90px;
+    max-width: 90px;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+}
+
+
+/* ------- Mindre mobiler ------------*/
+@media only screen and (max-width: 400px){
+
+  .flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: none;
+   
+  }
+
+  .barber, .denim, .tattoo {
+    max-width: 70px;
+  }
+
+    
+
+  
+  #fullpage { 
+    display: none;
+    z-index: 7;
+    width: 100%;
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.699);
+    margin-top: 5%;
+
   }
 }

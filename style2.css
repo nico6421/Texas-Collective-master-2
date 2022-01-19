@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body {
+    background-image: url("images/texas-baggrund.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+  }
+
+.cover {
+    box-shadow: 0 25px 0 0 rgba(0, 0, 0, 0.712);
+    -webkit-box-shadow: 0 10px 6px -6px black;
+	   -moz-box-shadow: 0 10px 6px -6px black;
+	        
+}
+      
+
+
+.flexbox {
+ 
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+}
+
+.flexbox div {
+    margin-top: 50px;
+background-color: #b7794d;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+border-radius: 4px;
+height: 300px;
+width: 300px;
+text-align: center;
+
+
+}
+
+.flexbox img {
+  margin-top: 50px;
+}
+
+
+.denim:hover, .barber:hover, .tattoo:hover {
+background-color: #b3c382;
+cursor: pointer;
+
+}
+
+.container {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  background-color:#b7794d ;
+  margin-top: 50px ;
+  margin-left: auto;
+  margin-right: auto ;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+border-radius: 4px;
+}
+
+.puff-in-center {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.puff-in-center.transition {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+.texas_text {
+  padding: 20px;
+  line-height: 30px;
+  text-align: start;
+  font-family: 'Yuji Syuku';
+  font-style: normal;
+  font-weight: 600;
+}
+
+h2 {
+  
+  color: black;
+  font-family: 'Rye', cursive;
+    font-size: 40px;
+    width: 100%;
+    height: 50px;
+    
+}
+
+.article1 {
+    
+    margin-top: 40px;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    height: 400px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    
+}
+
+
+.article_text {
+  display: flex;
+  height: 170px;
+  width: 60%;
+  background-color: #b7794d;
+  margin-right: 25px;
+  margin-top: 90px;
+  padding: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+border-radius: 4px;
+  
+}
+
+.text_brinch {
+  width: 100%;
+}
+
+#empty {
+  position: absolute;
+  transition: opacity 0.1s;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: auto;
+  height: auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+
+
+.flip-card-back {
+  background-color: inherit;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-text {
+  margin-top: -290px;
+  margin-left: 100px;
+  font-family: 'Rye'
+}
+
+
+.article2 {
+    
+  margin-top: -100px;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+  height: 400px;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  
+}
+.article2 h2{
+  display: flex;
+  
+}
+
+.article_text2 {
+  display: flex;
+  height: 170px;
+  width: 60%;
+  background-color: #b7794d;
+  margin-right: 25px;
+  margin-top: 100px;
+  padding: 20px;
+box-shadow: 0 8px 6px -6px black;
+border-radius: 4px;
+  
+}
+
+
+
+.flip-card2 {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  display: flex;
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  
+  backface-visibility: hidden;
+  
+}
+
+.flip-card-text2 {
+  margin-top: -300px;
+  margin-left: 100px;
+  font-family: 'Rye'
+}
+
+.flip-card-back2 {
+  background-color: inherit;
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+.article3 {
+  margin-top: -100px;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+  height: 400px;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+
+.arts {
+  display: grid;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: #b7794d;
+  margin-bottom: 30px;
+  border-radius: 5px;
+box-shadow: 0 8px 6px -6px black;
+}
+
+.arts h2 {
+  font-family: 'Rye', cursive;
+  text-align: center;
+}
+
+
+.gallery {
+  margin-top: 20px;
+display: grid;
+grid-template-columns: 120px 120px 120px  120px 120px 120px;
+align-items: start;
+justify-content: space-evenly;
+}
+
+.gallery :first-child {
+align-self: center;
+}
+
+
+
+.img img {
+height: fit-content;
+width: 100%;
+margin-bottom: 20px;
+}
+
+#fullpage {
+  margin-top: -50px;
+display: none;
+position:absolute;
+z-index: 7;
+width: 100vw;
+height: 80vh;
+background-size: contain;
+background-repeat: no-repeat no-repeat;
+background-position: center;
+background-color: rgba(0, 0, 0, 0.699);
+
+
+
+}
+
+
+
+footer {
+  width: 100%;
+  display: table;
+  background-color:#644137 ;
+  color: white;
+  text-align: center;
+  font-family: 'Rye', cursive;
+  bottom: 0;
+  
+
+}
+
+.texas {
+  width: 100%;
+  display: table;
+  margin-left: 12px;
+}
+
+.footer-box {
+  padding: 10px;
+}
+
+.upper-text {
+  padding: 10px;
+}
+
+
+
+.some-logo {
+  height: 30px;
+ margin: 5px;
+ cursor: pointer;
+}
+
+.lower-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px;
+  
+}
+
+
+
+.lower-icons {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+
+
+
+
+
+
+
+/*---Mobile friendly----*/
+
+@media only screen and (max-width: 1055px) {
+  body {
+    background-image: url("/images/mobile\ background2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+  }
+}
